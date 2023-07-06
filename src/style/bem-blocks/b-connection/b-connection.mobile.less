@@ -1,0 +1,36 @@
+/* 320++  */
+
+/* 768++  */
+
+.b-connection {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: @cl-white;
+    background: @cl-dark-cyan---lime-green;
+    display: flex;
+
+    &__info {
+        display: none;
+    }
+
+
+    &__phone {
+        width: 80px;
+        height: 80px;
+        background: @cl-strong-cyan---lime-green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background @animation-time;
+
+        .touchevents &:active,
+        .no-touchevents &:hover {
+            background: @cl-dark-moderate-lime-green;
+        }
+    }
+
+    &__phone-title {
+        display: none;
+    }
+}

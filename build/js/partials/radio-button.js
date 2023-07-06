@@ -1,0 +1,1 @@
+"use strict";for(var circles=document.getElementsByClassName("circle"),i=0;i<circles.length;i++)circles[i].addEventListener("click",function(){changeColor(this.getAttribute("data-circle"))});function changeColor(e){for(var c=document.getElementsByClassName("circle"),t=0;t<c.length;t++)c[t].classList.remove("selected");c[e-1].classList.add("selected")}

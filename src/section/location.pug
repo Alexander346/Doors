@@ -1,0 +1,14 @@
+include ui-kit/icon.pug
+include ui-kit/icon.pug
+
+mixin location()
+    +b.location.--green.--adress
+        +icon('location').--green.--location-adress
+        +e('ul').list
+            +e.item
+                +e.city Нижний Новгород
+            +e.item
+                +e.city Москва
+            +e.item
+                +e.city Новосибирск
+        +icon('list-arrow').--arrow-adress

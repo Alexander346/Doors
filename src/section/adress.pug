@@ -1,0 +1,28 @@
+include disposition.pug
+include ui-kit/title.pug
+include ui-kit/icon.pug
+include ribbon.pug
+include ribbon-nav.pug
+
+include location.pug
+
+mixin adress()
+    +b('section').adress
+        .container
+            +e.content
+                +e.flex
+                
+                    +title({
+                        type: "h2",
+                        title: "Магазины",
+                    }).--adress
+                    
+                    +location()
+                
+                +ribbon()
+                
+                +ribbon-nav({
+                    href: 'javascript:void(0);',
+                    title: 'Все салоны',
+                    content: 'Все салоны'
+                })

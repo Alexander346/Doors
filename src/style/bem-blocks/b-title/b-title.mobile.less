@@ -1,0 +1,106 @@
+/* 320 + */
+.b-title {
+    font-size: 18px;
+    line-height: 26px;
+    color: @cl-very-dark-gray;
+    margin: 0;
+
+    &--preview {
+        font-family: @font-base-lora;
+        .adaptiv-font(50, 100);
+        line-height: normal;
+        color: @cl-white;
+        margin-bottom: 8px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    &--interactive {
+        margin-bottom: 27px;
+        font-size: 30px;
+        line-height: 37px;
+        font-weight: 700;
+    }
+
+    &--sale {
+        font-size: 21px;
+        line-height: 28px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding-right: 35px;
+
+        & > .no-accent {
+            br {
+                display: none;
+            }
+        }
+    }
+
+    &--sale-collection {
+        display: none;
+    }
+
+    &--about {
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    &--news,
+    &--adress {
+        margin-bottom: 28px;
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 600;
+    }
+    
+    &--news {
+        margin-bottom: 36px;
+    }
+
+    &--info {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 21px;
+    }
+    
+    &--recourse {
+        font-size: 24px;
+        line-height: 34px;
+        color: @cl-white;
+        font-weight: 600;
+        width: 243px;
+        margin-bottom: 38px;
+    }
+
+    &--review {
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 600;
+        margin-bottom: 27px;
+    }
+
+    &--maintaining{
+        .adaptiv-font(30, 48);
+        font-family: @font-base;
+        font-weight: 700;
+        line-height: 60px;
+        color: @cl-very-dark-gray; 
+    }
+
+    &--guarantee{
+        position: relative;
+        .adaptiv-font(30, 48);
+        z-index: 1;
+        font-family: @font-base;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 67px;
+        color: @cl-very-dark-gray; 
+        margin-top: -35px;
+        margin-bottom: 3px;
+        margin-right:212px ;
+    }
+}

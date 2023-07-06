@@ -1,0 +1,60 @@
+/* 768 + */
+.b-link {
+    
+    &--all-service {
+        font-size: 14px;
+        line-height: 32px;
+        color: @cl-dark-gray-dark;
+        transition: color @animation-time;
+        white-space: nowrap;
+
+        .touchevents &:active,
+        .no-touchevents &:hover {    
+            color: @cl-white ;
+        }
+
+    }
+
+    &--title-link {
+        display: inline-block;
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 700;
+        color: @cl-white;
+        margin-bottom: 11px;
+        transition: opacity @animation-time;
+
+        .touchevents &:active,
+        .no-touchevents &:hover {    
+            opacity: .22;
+        }
+    }
+
+    &--support {
+        min-height: 124px;
+        justify-content: flex-start;
+
+        &::after {
+            left: -80px;
+            width: 130%;
+        }
+
+
+        .touchevents &:active,
+        .no-touchevents &:hover {
+            
+            .b-icon--support {
+                left: 5px;
+            }
+        }
+    }
+
+    &--call-request {
+        display: none;
+    }
+
+    &--appeal {
+        max-width: 247px;
+        margin-bottom: 0;
+    }
+}

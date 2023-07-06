@@ -1,0 +1,51 @@
+// -
+
+include subtitle.pug
+include ui-kit/title.pug
+include ui-kit/icon.pug
+include ui-kit/images.pug
+
+mixin preview()
+    +b('section').preview
+        +e.content
+            .container
+                +e.body.swiper-container
+                    +e.wrapper.swiper-wrapper
+                        +e.slide.swiper-slide
+                            +title({
+                                type: 'h1',
+                                title: 'Stylish doors',
+                            }).--preview
+                            +subtitle({
+                                subtitle: 'сделанные по&nbsp;новейшим разработкам из&nbsp;проверенных материалов'
+                            }).--preview
+                            +images([
+                                {
+                                    srcset: 'images/content/preview/preview.webp',
+                                    type: 'image/webp'
+                                },
+                            ], true, 'images/content/preview/preview.jpg', 1600, 900).--preview
+                    +e.button
+                        +e.prev.swiper-button-prev
+                            +icon('line-arrow-43').--preview
+                        +e.next.swiper-button-next
+                            +icon('line-arrow-43').--preview
+            +b.connection
+                +e.info
+                    +e.title 8 800 551 32 40
+                    +e.location
+                        +icon('location').--location-preview
+                        +e('ul').list
+                            +e.item
+                                +e.city Нижний Новгород 
+                            +e.item
+                                +e.city Москва
+                            +e.item
+                                +e.city Новосибирск
+                        +icon('list-arrow').--noline-arrow-preview
+                +e('a').phone(href='tel:88005513240' title='88005513240')
+                    +e('div').wrapper
+                        +icon('phone').--phone-preview
+                        +e.phone-title Обратный звонок
+
+                

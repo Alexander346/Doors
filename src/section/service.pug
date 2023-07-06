@@ -1,0 +1,73 @@
+mixin service()
+    +b('section').service
+        .container
+            +e.wrapper
+                +e.facility
+                    +e.benefits
+                        +e.backg
+                            +images([
+                                    {
+                                        srcset: 'images/content/service/Rectangle_tablet.jpg',
+                                        media: '(min-width: 1280px)',
+                                        type: 'image/jpeg'
+                                    },
+                                    {
+                                        srcset: 'images/content/service/Rectangle_tablet.jpg',
+                                        media: '(min-width: 768px)',
+                                        type: 'image/jpeg'
+                                    },
+                                    {
+                                        srcset: 'images/content/service/Rectangle.jpg',
+                                        media: '(min-width: 320px)',
+                                        type: 'image/jpeg'
+                                    },
+                                ], true, 'images/content/service/Rectangle_tablet.jpg', 340, 516)
+                            +e('span').number 5
+                        +e.loyalty
+                            include subtitle.pug
+                            +subtitle({
+                            subtitle: 'Лет'
+                            }).--years
+                            +title({
+                                type: 'h3',
+                                title: 'Гарантия'
+                            }).--maintaining
+                    +e.info
+                        +subtitle({
+                            subtitle: 'Мы&nbsp;предоставляем клиентам выезд на&nbsp;замер, консультации на&nbsp;объекте; доставку и&nbsp;подъем продукции; врезку фурнитуры на&nbsp;профессиональном оборудовании; демонтаж и&nbsp;установку межкомнатных дверей; укладку массивной и&nbsp;паркетной доски.'
+                            }).--clients
+                        include ui-kit/button.pug
+                        +button({
+                        content: 'Подробнее'
+                        }).--information
+                +e.installation
+                    +e.booking
+                        +images([
+                                {
+                                    srcset: 'images/content/service/webp/service-door_tablet.webp',
+                                    media: '(min-width: 1280px)',
+                                    type: 'image/jpeg'
+                                },
+                                {
+                                    srcset: 'images/content/service/webp/service-door_tablet.webp',
+                                    media: '(min-width: 768px)',
+                                    type: 'image/jpeg'
+                                },
+                                {
+                                    srcset: 'images/content/service/webp/service-door.webp',
+                                    media: '(min-width: 320px)',
+                                    type: 'image/jpeg'
+                                },
+                            ], true, 'images/content/service/service-door_tablet.jpg', 579, 564).--droor
+                    +e.instruction
+                        +title({
+                                type: 'h3',
+                                title: 'Сервис'
+                            }).--guarantee
+                        +subtitle({
+                                subtitle: 'Мы&nbsp;предоставляем клиентам выезд на&nbsp;замер, консультации на&nbsp;объекте; доставку и&nbsp;подъем продукции; врезку фурнитуры на&nbsp;профессиональном оборудовании; демонтаж и&nbsp;установку межкомнатных дверей; укладку массивной и&nbsp;паркетной доски.'
+                                }).--consultation
+                        include ui-kit/button.pug
+                        +button({
+                        content: 'Заказать замер'
+                        }).--booking

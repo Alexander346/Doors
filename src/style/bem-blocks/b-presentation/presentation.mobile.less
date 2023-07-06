@@ -1,0 +1,48 @@
+/* 320++  */
+.b-presentation {
+
+    &__wrapper {
+        display: flex;
+        
+    }
+
+    &__wrap{
+       display: flex;
+       flex-direction: column;
+    }
+
+
+    &__box{
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__inner {
+        margin-left: 25px;
+        display: flex;
+        column-gap: 8px;
+        align-items: center;
+    }
+
+    &__item {
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color:  @cl-light-gray;
+        cursor: pointer;
+        margin-right: 5px;
+         &__focused{
+        background-color: @cl-dark-cyan---lime-green;
+         }  
+    }
+
+    &__pair {
+        display: flex;
+    }
+}
+.b-green {
+    background-color:@cl-dark-cyan---lime-green;
+ }
+

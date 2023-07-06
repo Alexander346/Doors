@@ -1,0 +1,45 @@
+/* 320++  */
+
+.b-nav {
+    
+    display: none;
+    
+    &--first &__list {
+        margin: 0 -45px;
+    }
+    
+    &--first &__item {
+        margin: 0 45px;
+    }
+    
+    &--second &__list {
+        margin: 0 -35px;
+    }
+    
+    &--second &__item {
+        margin: 0 35px;
+    }
+    
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+    
+    &__button {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__text {
+        display: inline-block;
+        margin-right: 7px;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.4px;
+    }
+    
+    &__link {
+        color: @cl-white;
+    }
+}

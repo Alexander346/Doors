@@ -1,0 +1,45 @@
+//- ====================
+//- kontora: main
+//- 00-00-2017:
+//- --------------------
+//- Главная страница.
+//- ====================
+
+//- Используем стандартный шаблон Project
+extends ./template/base_layout
+
+block variables
+    - var file_name = 'main'
+
+//- Модифицируем head
+block head
+    - var pageTitle = 'Estet';
+    - var pageDescription = 'Наш сайт - это интернет-магазин, специализирующийся на продаже дверей и всего, что связано с ними. Мы предлагаем широкий ассортимент дверей различных типов и дизайнов, а также любые комплектующие и аксессуары для них. У нас вы найдете межкомнатные двери, входные двери, двери для саун и бань, а также гардеробные системы и двери-купе. В нашем магазине мы предлагаем только качественные и надежные изделия от проверенных производителей, а также обеспечиваем быструю доставку и установку. Обращаясь к нам, вы можете быть уверены, что получите только самые лучшие решения для своего дома или офиса, а также грамотную консультацию от наших специалистов.'
+    - var pageKeywords = 'двери, интернет-магазин, межкомнатные двери, входные двери, двери для саун, двери для бань, гардеробные системы, двери-купе, комплектующие для дверей, аксессуары для дверей, качественные двери, проверенные производители, быстрая доставка, установка дверей, консультация специалистов.'
+    - var pageImage = 'images/content/test-image.jpg'
+
+//- Выводим попапы
+block popup
+    
+//- Выводим content
+block content
+        include section/preview.pug
+        +preview()
+        include section/product.pug
+        +product()
+        include section/interactive.pug
+        +interactive()
+        include section/sale.pug
+        +sale()
+        include section/service.pug
+        +service()
+        include section/review.pug
+        +review()
+        include section/about.pug
+        +about()
+        include section/news.pug
+        +news()
+        include section/adress.pug
+        +adress()
+        //- include section/presentation.pug
+        //- +presentation()

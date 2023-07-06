@@ -1,0 +1,51 @@
+/* 320++  */
+.b-header .b-burger {
+    padding: 11px 2px;
+}
+
+.b-burger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        Left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        height: 60px;
+    }
+    
+    &__line {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 10px;
+        width: 29px;
+        height: 2px;
+        background-color: white;
+    }
+    
+    &__line::before {
+        content: "";
+        position: absolute;
+        bottom: 9px;
+        left: 0;
+        width: 29px;
+        height: 2px;
+        background-color: inherit;
+    }
+    
+    &__line::after {
+        content: "";
+        position: absolute;
+        top: 9px;
+        left: 0;
+        width: 21px;
+        height: 2px;
+        background-color: inherit;
+    }
+    
+}

@@ -1,0 +1,29 @@
+//- Используем стандартный шаблон
+extends ./template/index_layout
+
+//- Модифицируем head
+block head
+    - var pageTitle = 'Страница страниц';
+
+//- Выводим контент
+block content
+    ul
+    
+        li
+            a(href=".htaccess") .htaccess
+    
+        li
+            a(href=".htpasswd") .htpasswd
+    
+        li
+            a(href="404.html") 404
+    
+        li
+            a(href="gui.html") gui
+    
+        li
+            a(href="iconlist.html") iconlist
+    
+        li
+            a(href="main.html") main
+    

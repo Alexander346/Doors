@@ -1,0 +1,63 @@
+/* 320++  */
+.b-images {
+    width: 100%;
+    height: 100%;
+
+    &--release{
+            width: auto; 
+            }
+
+    &__picture {
+        display: block;
+        line-height: 0;
+        height: 100%;
+        width: 100%;
+
+        &--sale {
+            display: block;
+        }
+
+    }
+
+    &--preview {
+        position: absolute;
+        top:0;
+        left:0;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0.35;
+        }
+       
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+        &--sale {
+            display: block;
+            line-height: 0;
+        }
+
+        &--interior {
+            object-position: center top;
+        }
+
+        &--technology {
+            object-position: center 80%;
+        }
+
+        &--preview {
+            object-position: 20% center;
+        }
+
+    }
+}

@@ -1,0 +1,52 @@
+/* 320++  */
+.b-functionality {
+    display: flex;
+    order: -1;
+    padding: 0;
+    
+    &__item {
+        position: relative;
+        
+        &--heart,
+        &--basket {
+            display: none;
+        }
+        
+        &--heart::before {
+            content: "1";
+            position: absolute;
+            bottom: 92%;
+            left: 86%;
+            padding: 2px 5px;
+            border-radius: 50%;
+            font-size: 10px;
+            line-height: 12px;
+            color: white;
+            background-color: green;
+            
+        }
+        
+        &--basket::before {
+            content: "100";
+            position: absolute;
+            bottom: 92%;
+            left: 86%;
+            padding: 2px 5px;
+            border-radius: 8px;
+            font-size: 10px;
+            line-height: 12px;
+            color: white;
+            background-color: green;
+            
+        }
+    }
+    
+    &__button {
+        
+        &--heart {
+            position: relative;
+            width: 32px;
+            height: 32px;
+        }
+    }
+}

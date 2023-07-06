@@ -1,0 +1,153 @@
+/* 320 + */
+
+.b-icon {
+
+    &--preview {
+        font-size: 15px;
+        color: @cl-white;
+    }
+    &--phone-preview {
+        font-size: 26px;
+        color: @cl-white;
+    }
+
+    &--sale {
+        font-size: 10px;
+        color: @cl-dark-cyan---lime-green;
+    }
+
+    &--about {
+        color: @cl-dark-cyan---lime-green;
+        font-size: 9px;
+    }
+    
+    &--logo {
+        font-size: 40px;
+        color: @cl-very-light-gray-mostly-white--logo;
+    }
+
+    &--vertically{
+        font-size: 9px;
+        color: @cl-dark-cyan---lime-green;
+        transform: translateY(1px);
+    }
+
+    &--control{
+        color: @cl-dark-cyan---lime-green;
+        font-size:9px;
+    }
+    
+    &--header-arrow {
+        font-size: 6px;
+    }
+    
+    &--revert {
+        font-size: 10px;
+        color: @cl-dark-cyan---lime-green;
+        transform: translateY(1px);
+    }
+
+    &--support {
+        font-size: 6px;
+        position: relative;
+        left: -11px;
+        transition: left @animation-time;
+    }
+
+    &--social {
+        font-size: 24px;
+        color: @cl-dark-gray-dark;
+        display: inline-block;
+        transition: color @animation-time;
+    }
+
+    &--functionality-loop {
+        padding: 2px 0;
+        font-size: 21px;
+    }
+    
+    &--functionality-heart {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-bottom: 8px;
+        font-size: 18px;
+    }
+    
+    &--full {
+        opacity: 0;
+    }
+    
+    &--functionality-basket {
+        padding: 2px 6px;
+        font-size: 20px;
+    }
+    
+    &--news {
+        display: block;
+        margin-top: 4px;
+        margin-bottom: 125px;
+        font-size: 32px;
+    }
+    
+    &--location-adress,
+    &--arrow-adress {
+        color: @cl-dark-cyan---lime-green;
+    }
+    
+    &--location-adress {
+        font-size: 26px;
+    }
+    
+    &--arrow-adress {
+        font-size: 5px;
+    }
+
+    &--review {
+        font-size: 32px;
+        color: @cl-white;
+        margin-right: 13px;
+        align-self: flex-start;
+        display: flex;
+        height: 31px;
+        width: 31px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &--youtube {
+        font-size: 18px;
+        color: @cl-dark-cyan---lime-green;
+        margin-right: 19px;
+        align-self: flex-start;
+    }
+
+    &--copyright {
+        display: inline-block;
+        font-size: 57px;
+        color: @cl-white;
+        opacity: .2;
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &--kontora {
+        font-size: 19px;
+        color: @cl-black;
+        opacity: .22;
+    }
+
+    &--play {
+        // font-size: 40px;
+        transition: all @animation-time;
+        .adaptiv-font(60, 95);
+        color: @cl-white;
+        display: flex;
+        justify-content: center;
+    }
+}

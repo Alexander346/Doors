@@ -1,0 +1,37 @@
+mixin presentation()
+    +b('section').presentation
+        +e.wrapper
+            .container
+                +e.wrap
+                    +images([
+                            {
+                                srcset: 'images/content/presentation/Video-picture.jpg',
+                                media: '(min-width: 1280px)',
+                                type: 'image/jpeg'
+                            },
+                            {
+                                srcset: 'images/content/presentation/Video-picture.jpg',
+                                media: '(min-width: 768px)',
+                                type: 'image/jpeg'
+                            },
+                            {
+                                srcset: 'images/content/presentation/Video-picture.jpg',
+                                media: '(min-width: 320px)',
+                                type: 'image/jpeg'
+                            },
+                            ], true, 'images/content/presentation/Video-picture.jpg', 1200, 675).--showing              
+                    +e.box
+                        +e.inner
+                            each itemNum in [1, 2, 4]
+                                +e('span').item(item=itemNum)
+                                if itemNum === 2
+                                   +e('span').item.green
+                        +e.pair
+                            include ui-kit/button.pug
+                            +button({}).--control
+                                include ui-kit/icon.pug
+                                +icon('line-arrow-26').--control
+                            include ui-kit/button.pug
+                            +button({}).--vertically
+                                include ui-kit/icon.pug
+                                +icon('line-arrow-26').--vertically

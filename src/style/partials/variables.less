@@ -1,0 +1,155 @@
+// Fonts
+@font-base: 'Open Sans', sans-serif;
+@font-base-cg: 'CG Times';
+@font-base-lucida: 'Lucida Grande';
+@font-base-lora: 'Lora';
+
+
+// Animation
+@animation-time: 0.3s;
+@double-animation: 0.6s;
+
+
+// Settings
+@desktop-xl: 1920;
+@laptop: 1440;
+@desktop: 1366;
+@desktop-min: 1024;
+@tablet: 768;
+@mobile: 320;
+@desktop-vh: 1080;
+
+// vmin - для мобильных устройств
+.vmin(@property, @value, @base: @mobile) {
+	@{property}: @value / @base * 100vmin;
+}
+
+// адаптивные стили через vw
+.vw(@property, @value, @base: @desktop-xl) {
+    @{property}: @value / @base * 100vw;
+}
+
+// обычные пиксельные стили
+.px(@property, @value, @base: @laptop) {
+	@{property}: @value * (@laptop * 1px) / @base;
+}
+
+// vh - для адаптации стилей под высоту страницы
+.vh(@property, @value, @base: @desktop-vh) {
+	@{property}: @value / @base * 100vh;
+}
+
+
+.adaptiv-font(@font-min, @font-max) {
+
+    @media  (min-width: 320px) and (max-width: 374px) {
+        font-size: @font-min * 1px;
+    }
+
+    @media  (min-width: 375px) and (max-width: 767px) {
+        font-size: calc(~"@{font-min}px + (@{font-max} - @{font-min}) * ((100vw - 375px) / (768 - 375))");
+    }
+
+    @media  (min-width: 768px) and (max-width: 1279px) {
+        font-size: calc(~"@{font-min}px + (@{font-max} - @{font-min}) * ((100vw - 768px) / (1280 - 768))");
+    }
+
+    @media  (min-width: 1280px) and (max-width: 1599px) {
+        font-size: calc(~"@{font-min}px + (@{font-max} - @{font-min}) * ((100vw - 1280px) / (1600 - 1280))");
+    }
+
+    @media  (min-width: 1600px){
+        font-size: @font-max * 1px;
+    }
+
+}
+
+// MediaQ - теперо подключаются в layout
+// @desktop: ~"(max-width: 1439px)";
+// @desktop-min: ~"(max-width: 1169px)";
+// @tablet: ~"(max-width: 1023px)";
+// @mobile: ~"(max-width: 767px)";
+
+// Colors
+// Цвета theme. Не трогать!!!
+@cl-theme-global: @cl-font-main;
+@cl-theme-link: @cl-font-main;
+@cl-theme-link-hover: @cl-font-light;
+@cl-theme-grey: @cl-gray;
+
+// Цвета текста
+@cl-font-main: @cl-very-dark-gray;
+@cl-font-light: @cl-gray;
+
+/* Добавлять по категориям cl-элемент
+/* @cl-button-bg: @Var */
+
+// Общий док
+@background: @cl-very-light-gray;
+
+// разделитель между секция
+@hr-main: @cl-gray;
+
+// элементы формы (input, textarea, select, etc)
+@form-back: @cl-white;
+@form-border: @cl-gray;
+
+// Checkbox
+@checkbox-back: @cl-gray;
+@checkbox-back-hover: @cl-gray;
+@checkbox-back-checked: @cl-font-main;
+@check-mark: @cl-white;
+
+// Radiobutton
+@radio-back: @cl-white;
+
+// кнопки с бэком без бордера
+@button-main-back: @cl-black;
+@button-main-hover: @cl-gray;
+@button-main-active: @cl-gray;
+
+// кнопки прозрачные
+@button-transparent-back: @cl-transparent;
+@button-transparent-hover: @cl-gray;
+@button-transparent-active: @cl-gray;
+
+
+
+
+
+// ------
+// ЦВЕТА 
+// ------
+
+// // Alpha colors
+// // @cl-alpha: rgba(255, 255, 255, .2); // цвет + описание
+
+// Основные цвета
+@cl-transparent: transparent;
+@cl-white: #ffffff;
+@cl-black: #000000;
+@cl-gray: #dddddd;
+@cl-pure-or-mostly-pure-red: #ff0000;
+@cl-very-dark-gray-mostly-black: #212121;
+// Генерируемые цвета - ниже не пишем ничего сами )
+@cl-strong-cyan---lime-green: #00c34a;
+@cl-dark-cyan---lime-green: #1e8a47;
+@cl-very-dark-gray: #3c3c3c;
+@cl-dark-gray-dark: #999999;
+@cl-light-gray: #cdcdcd;
+@cl-light-grayish-pink: #faf8f9;
+@cl-very-light-gray-light: #f0f0f0;
+@cl-very-light-gray: #f2f2f2;
+@cl-very-light-gray-mostly-white: #f7f7f7;
+@cl-very-dark-gray-mostly-black: #313131;
+@cl-dark-gray: #979797;
+@cl-very-light-gray-mostly-white--logo: #fefefe;
+@cl-light-grayish-pink: #f3f1f2;
+@cl-dark-moderate-lime-green: #3bac3e;
+@cl-very-dark-cyan: #00694f;
+@cl-light-gray: #d8d8d8;
+@cl-very-light-gray-mostly-white--999: #f9f9f9;
+@cl-white-80: rgba(255, 255, 255, .8);
+@cl-white-60: rgba(255, 255, 255, .6);
+@cl-dark-cyan---lime-green-80: rgba(30, 138, 71, .8);
+@cl-dark-cyan---lime-green-60: rgba(30, 138, 71, .6);

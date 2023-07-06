@@ -1,0 +1,10 @@
+include ui-kit/icon.pug
+
+mixin ribbon-nav(obj)
+    +b.ribbon-nav(class!=attributes.class)
+        +e('a').link(href=obj.href title=obj.title)(class!=attributes.class) !{obj.content}
+        +e.arrow(class!=attributes.class)
+            +e('button').button-prev
+                +icon('line-arrow-61')  
+            +e('button').button-next
+                +icon('line-arrow-61')

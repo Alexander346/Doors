@@ -1,0 +1,42 @@
+/* 1366++  */
+
+.b-company {
+    position: absolute;
+    top: 0;
+    left: 66%;
+    width: 34%;
+    height: 100%;
+
+
+    &__top {
+        height: 50%;
+    }
+    &__bottom {
+        cursor: pointer;
+        padding: .5vw 2vw; 
+        height: 50%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: background @animation-time;
+        
+        &:hover {
+            background: @cl-dark-cyan---lime-green;
+
+            .b-pulse {
+                opacity: 0;
+            }
+            
+            .b-title--info,
+            .b-subtitle--info {
+                color: @cl-white ;
+            }
+            
+            .b-images--company {
+                width: 194.2%;
+                visibility: visible;
+            }
+        }
+    }
+}

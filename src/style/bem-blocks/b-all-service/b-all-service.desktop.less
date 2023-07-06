@@ -1,0 +1,38 @@
+/* 1366++  */
+
+.b-all-service {
+    position: relative;
+    padding-right: 0;
+    padding-left: 15px;
+    width: 90%;
+    padding-bottom: 9px;
+
+    .container {
+        padding-right: 0;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top:0;
+        right: 99%;
+        width: 300%;
+        height: 100%;
+        background: @cl-very-dark-gray;
+        z-index: -1;
+    }
+
+    &__list {
+        margin: 0 -20px;
+        margin-right: 0;
+        padding-bottom: 2px;
+    }
+
+    &__item {
+        margin: 0 20px 30px;
+
+        &--margin {
+            margin-bottom: 0;
+        }
+    }
+}

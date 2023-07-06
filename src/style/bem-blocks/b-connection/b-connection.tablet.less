@@ -1,0 +1,85 @@
+/* 768++  */
+
+.b-connection {
+    bottom: 109px;
+    width: 686px;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        width: calc(~'100% / 2');
+        padding: 45px 10px 38px 60px;
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+        margin-bottom: 30px;
+        min-height: 33px;
+    }
+    
+    &__list {
+        padding: 0;
+    }
+
+    &__location {
+        height: 26px;
+        overflow: hidden; 
+        display: flex;
+        align-self: flex-start;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+        transition: all @animation-time;
+        
+        .touchevents &:active,
+        .no-touchevents &:hover {
+            overflow: visible;
+
+            .b-icon--noline-arrow-preview {
+                transform: rotate(-180deg);
+            }
+
+        }
+    }
+
+
+    &__item {
+        list-style: none;
+        padding: 0 13px 0 17px;
+        background: @cl-dark-cyan---lime-green;
+    }
+
+    &__city {
+        list-style: none;
+    }
+
+    &__phone {
+        width: calc(~'100% / 2');
+        margin-top: auto;
+        position: absolute;
+        bottom: -110px;
+        right:0;
+        height: 210px;
+        padding: 36px;
+        background: @cl-strong-cyan---lime-green;
+        display: block;
+    }
+
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+    }
+
+    &__phone-title {
+        display: inline-block;
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: @cl-white;
+    }
+}

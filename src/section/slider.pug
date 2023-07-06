@@ -1,0 +1,34 @@
+mixin slider-sale()
+    +b.slider.--sale
+        +images([
+            {
+                srcset: '../images/content/sale/desktop-home-sale.jpg',
+                media: '(min-width: 1280px)',
+                type: 'image/jpeg'
+            },
+            {
+                srcset: '../images/content/sale/tablet-home-sale.jpg',
+                media: '(min-width: 768px)',
+                type: 'image/jpeg'
+            },
+            {
+                srcset: '../images/content/sale/mobile-home-sale.jpg',
+                media: '(min-width: 320px)',
+                type: 'image/jpeg'
+            },
+        ], true, '../images/content/sale/desktop-home-sale.jpg', 1600, 900).--sale
+
+        include ui-kit/button.pug
+        +button({
+            content: '',
+            link: false,
+            href: '#'
+        }).--revert
+            include ui-kit/icon.pug
+            +icon('line-arrow-26').--revert
+        +button({
+            content: '',
+            link: false,
+            href: '#'
+        }).--sale
+            +icon('line-arrow-26').--sale

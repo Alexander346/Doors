@@ -1,0 +1,149 @@
+@font-face {
+	font-family: "icons";
+	src: url('../fonts/icons.eot');
+	src: url('../fonts/icons.eot?#iefix') format('eot'),
+		url('../fonts/icons.woff2') format('woff2'),
+		url('../fonts/icons.woff') format('woff'),
+		url('../fonts/icons.ttf') format('truetype'),
+		url('../fonts/icons.svg#icons') format('svg');
+	font-display: swap;
+}
+
+.icon-base-pseudo {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+.icon-char(@filename) {
+	@basket: "\E001";
+	@facebook: "\E002";
+	@heart-full: "\E003";
+	@heart: "\E004";
+	@instagram: "\E005";
+	@kontora: "\E006";
+	@line-arrow-109: "\E007";
+	@line-arrow-125: "\E008";
+	@line-arrow-172: "\E009";
+	@line-arrow-26: "\E00A";
+	@line-arrow-43: "\E00B";
+	@line-arrow-61: "\E00C";
+	@list-arrow: "\E00D";
+	@location: "\E00E";
+	@logo: "\E00F";
+	@loop: "\E010";
+	@map: "\E011";
+	@noline-arrow: "\E012";
+	@pencil: "\E013";
+	@phone: "\E014";
+	@play-ring: "\E015";
+	@ring-arrow: "\E016";
+	@search: "\E017";
+	@sort: "\E018";
+	@tg: "\E019";
+	@vk: "\E01A";
+	@whatsapp: "\E01B";
+	@youtube: "\E01C";
+	
+	content: @@filename;
+}
+
+.icon(@filename, @insert: before) {
+	@pseudo-selector: ~":@{insert}";
+
+	&@{pseudo-selector} {
+		&:extend(.icon-base-pseudo);
+		.icon-char(@filename);
+	}
+}
+
+.icon-basket {
+	.icon(basket);
+}
+.icon-facebook {
+	.icon(facebook);
+}
+.icon-heart-full {
+	.icon(heart-full);
+}
+.icon-heart {
+	.icon(heart);
+}
+.icon-instagram {
+	.icon(instagram);
+}
+.icon-kontora {
+	.icon(kontora);
+}
+.icon-line-arrow-109 {
+	.icon(line-arrow-109);
+}
+.icon-line-arrow-125 {
+	.icon(line-arrow-125);
+}
+.icon-line-arrow-172 {
+	.icon(line-arrow-172);
+}
+.icon-line-arrow-26 {
+	.icon(line-arrow-26);
+}
+.icon-line-arrow-43 {
+	.icon(line-arrow-43);
+}
+.icon-line-arrow-61 {
+	.icon(line-arrow-61);
+}
+.icon-list-arrow {
+	.icon(list-arrow);
+}
+.icon-location {
+	.icon(location);
+}
+.icon-logo {
+	.icon(logo);
+}
+.icon-loop {
+	.icon(loop);
+}
+.icon-map {
+	.icon(map);
+}
+.icon-noline-arrow {
+	.icon(noline-arrow);
+}
+.icon-pencil {
+	.icon(pencil);
+}
+.icon-phone {
+	.icon(phone);
+}
+.icon-play-ring {
+	.icon(play-ring);
+}
+.icon-ring-arrow {
+	.icon(ring-arrow);
+}
+.icon-search {
+	.icon(search);
+}
+.icon-sort {
+	.icon(sort);
+}
+.icon-tg {
+	.icon(tg);
+}
+.icon-vk {
+	.icon(vk);
+}
+.icon-whatsapp {
+	.icon(whatsapp);
+}
+.icon-youtube {
+	.icon(youtube);
+}

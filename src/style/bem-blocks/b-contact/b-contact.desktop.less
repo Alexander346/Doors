@@ -1,0 +1,35 @@
+/* 1366++  */
+
+.b-contact {
+    position: relative;
+    padding-right: 0;
+    padding-left: 74px;
+    width: 33%;
+    padding-top: 58px;
+    padding-bottom: 64px;
+
+    .container {
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top:0;
+        left: 99%;
+        width: 300%;
+        height: 100%;
+        background: @cl-black;
+    }
+
+    &__wrapper {
+        display: block;
+    }
+
+    &__social {
+        justify-content: flex-start;
+        margin-bottom: 15px;
+    }
+}

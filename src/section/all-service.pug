@@ -1,0 +1,38 @@
+include ui-kit/title.pug
+include ui-kit/link.pug
+
+
+mixin service(obj)
+    +b.all-service
+        .container
+            +e('ul').list
+                each item in obj
+                    if item.service
+                        +e.item
+                            +title({
+                                type: "h3",
+                                title: item.title
+                            }).--all-service
+                            +e('ul').roster
+                                each items in item.service || []
+                                    +e.element
+                                        +link({
+                                            link: true,
+                                            href: items.href || 'javascript:void(0);',
+                                            title: items.title || '',
+                                            content: items.content || '',
+                                        }).--all-service
+                    else 
+                        +e.item.--margin
+                            +link({
+                                link: true,
+                                href: item.href || 'javascript:void(0);',
+                                title: item.title || '',
+                                content: item.title || ''
+                            }).--title-link
+
+
+
+
+
+

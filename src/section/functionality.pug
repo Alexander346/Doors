@@ -1,0 +1,15 @@
+mixin functionality()
+    +b('ul').functionality
+        +e('li').item.--loop
+            +e('button').button
+                include ui-kit/icon.pug
+                +icon('loop').--functionality-loop
+        +e('li').item.--heart
+            +e('button').button.--heart
+                include ui-kit/icon.pug
+                +icon('heart').--functionality-heart
+                +icon('heart-full').--functionality-heart.--full
+        +e('li').item.--basket
+            +e('button').button
+                include ui-kit/icon.pug
+                +icon('basket').--functionality-basket

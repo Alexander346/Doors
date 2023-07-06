@@ -1,0 +1,57 @@
+/* 1366++  */
+
+.b-interior {
+    position: relative;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+
+    & .b-pulse {
+        &::after,
+        &::before {
+            animation-delay: 2s;
+        }
+    }
+    
+    &:hover {
+
+        .b-interior__left {
+            width: 56%;
+            margin-right: 44%;
+        }
+
+        .b-interior__right {
+            right: 0;
+        }
+
+        .b-pulse {
+            opacity: 0;
+        }
+
+    }
+
+    &__left {
+        height: 100%;
+        width: 66%;
+        margin-right: 34%;
+        position: relative;
+        z-index: 2;
+        transition: width @animation-time,
+                    margin-right @animation-time;
+    }
+
+    &__right {
+        position: absolute;
+        top: 0;
+        bottom:0;
+        right: 34%;
+        padding: 10vw 2vw;
+        background: @cl-dark-cyan---lime-green;
+        height: 100%;
+        width: 44%; // 26vw
+        z-index: 1;
+        transition: right @animation-time;
+    }
+
+
+}

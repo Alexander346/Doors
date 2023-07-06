@@ -1,0 +1,62 @@
+/* 768++  */
+
+.b-preview {
+    background: @cl-very-dark-gray;
+    overflow: hidden;
+    
+    &__content {
+        min-height: 660px;
+    }
+
+    &__body {
+        padding: 168px 70px 282px 70px;
+        justify-content: center;
+        min-height: 660px;
+    }
+
+    &__wrapper {
+        margin: 0;
+    }
+
+    &__slide {
+        justify-content: center;
+        align-items: center; 
+    }
+
+    &__button {
+        position: absolute;
+        height: 43px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-180%);
+        width: 100%;
+        display: block;
+    }
+
+    &__button .b-swiper-button-prev,
+    &__button .b-swiper-button-next {
+        width: 54px;
+    }
+
+    &__button .b-swiper-button-prev {
+        left: 15px;
+
+        .touchevents &:active,
+        .no-touchevents &:hover {
+            left: 12px;
+        }
+    }
+
+    &__button .b-swiper-button-next {
+        left: auto;
+        right: 15px;
+        transition: right @animation-time;
+        
+        .touchevents &:active,
+        .no-touchevents &:hover {
+            left: auto;
+            right: 12px;
+        }
+    }
+}
+

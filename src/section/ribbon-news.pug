@@ -1,0 +1,103 @@
+mixin ribbon-news()
+    +b.ribbon-news
+    
+        +e.slide.--main.--outside
+            +b('article').paper.--main
+                +e('a').link(href="javascript:void(0)" title="Новые продукты ‒ коллекция покрытий Boonlayer Ultratex и Boonlayer Original")
+                    +e('picture').picture.--main
+                        +e('source').source(srcset="../images/content/news/news-paper-main.webp")
+                        +e('img').image(src="../images/content/news/news-paper-main.jpg" alt="Новые продукты ‒ коллекция покрытий Boonlayer Ultratex и Boonlayer Original")
+                    +e.cover 
+                        +e('p').title Новости и СМИ о нас
+                        +e('p').subtitle.--main Новые продукты ‒ коллекция покрытий Boonlayer Ultratex и&nbsp;Boonlayer Original
+                        +e('time').time(datetime="2021-01-25") 25 января 2021 г.
+                
+        +e.wrapper
+            +e.slide.--main.--inside
+                +b('article').paper.--main
+                    +e('a').link(href="javascript:void(0)" title="Новые продукты ‒ коллекция покрытий Boonlayer Ultratex и Boonlayer Original")
+                        +e('picture').picture.--main
+                            +e('source').source(srcset="../images/content/news/news-paper-main.webp")
+                            +e('img').image(src="../images/content/news/news-paper-main.jpg" alt="Новые продукты ‒ коллекция покрытий Boonlayer Ultratex и Boonlayer Original")
+                        +e.cover
+                            +e('p').title Новости и СМИ о нас
+                            +e('p').subtitle.--main Новые продукты ‒ коллекция покрытий Boonlayer Ultratex и&nbsp;Boonlayer Original
+                            +e('time').time(datetime="2021-01-25") 25 января 2021 г.
+                    
+            +e.slide        
+                +b('article').paper
+                    +e('a').link(href="javascript:void(0)" title="ESTET на Международной строительно-интерьерной выставке Batimat 2020")
+                        +e('picture').picture
+                            +e('source').source(srcset="../images/content/news/news-vistavki.webp")
+                            +e('img').image(src="../images/content/news/news-vistavki.jpg" width="258" height="139" alt="ESTET на Международной строительно-интерьерной выставке Batimat 2020")
+                        +e('p').title Выставки
+                        +e('p').subtitle ESTET на&nbsp;Международной строительно-интерьерной выставке Batimat 2020
+                        +e('time').time(datetime="2021-01-25") 25 января 2021 г. 
+                    
+            +e.slide.--empty
+                +b('article').paper
+                    +e('a').link(href="javascript:void(0)" title="Введены новые оригинальные покрытия серии BOONLAYER")
+                        +e('p').title Новости и СМИ о нас
+                        +e('p').subtitle Введены новые оригинальные покрытия серии BOONLAYER
+                        +e('time').time(datetime="2021-01-25") 25 января 2021 г.
+                    
+            +e.slide.--video        
+                +b('article').paper
+                    +e('a').link(href="javascript:void(0)" title="Новые технологии производства коробов для скрытых дверей")
+                        include ui-kit/icon.pug
+                        +icon('play-ring').--news
+                        //- +e('picture').picture
+                        //-     +e('img').image(src="" alt="")
+                        //-     +e('source').source(srcset="" media="")
+                        +e('p').title Видео
+                        +e('p').subtitle Новые технологии производства коробов для скрытых дверей
+                        +e('time').time(datetime="2021-01-25") 25 января 2021 г.
+                    
+            +e.slide        
+                +b('article').paper.--jaluzi
+                    +e('a').link(href="javascript:void(0)" title="Жалюзные межкомнатные двери AIR поражают стилем и притягивают внимание")
+                        +e('picture').picture
+                            +e('source').source(srcset="../images/content/news/news-jaluzi.webp")
+                            +e('img').image(src="../images/content/news/news-jaluzi.jpg" width="258" height="139" alt="Жалюзные межкомнатные двери AIR поражают стилем и притягивают внимание")
+                        +e('p').title Новости и СМИ о нас
+                        +e('p').subtitle Жалюзные межкомнатные двери AIR поражают стилем и&nbsp;притягивают внимание
+                        +e('time').time(datetime="2021-01-25") 25 января 2021 г.
+                    
+            +e.slide        
+                +b('article').paper
+                    +e('a').link(href="javascript:void(0)" title="ESTET на Международной строительно-интерьерной выставке Batimat 2020")
+                        +e('picture').picture
+                            +e('source').source(srcset="../images/content/news/news-vistavki.webp")
+                            +e('img').image(src="../images/content/news/news-vistavki.jpg" width="258" height="139" alt="ESTET на Международной строительно-интерьерной выставке Batimat 2020")
+                        +e('p').title Выставки
+                        +e('p').subtitle ESTET на&nbsp;Международной строительно-интерьерной выставке Batimat 2020
+                        +e('time').time(datetime="2021-01-25") 25 января 2021 г. 
+                    
+            +e.slide.--empty
+                +b('article').paper
+                    +e('a').link(href="javascript:void(0)" title="Введены новые оригинальные покрытия серии BOONLAYER")
+                        +e('p').title Новости и СМИ о нас
+                        +e('p').subtitle Введены новые оригинальные покрытия серии BOONLAYER
+                        +e('time').time(datetime="2021-01-25") 25 января 2021 г.
+                    
+            +e.slide.--video        
+                +b('article').paper
+                    +e('a').link(href="javascript:void(0)" title="Новые технологии производства коробов для скрытых дверей")
+                        include ui-kit/icon.pug
+                        +icon('play-ring').--news
+                        //- +e('picture').picture
+                        //-     +e('img').image(src="" alt="")
+                        //-     +e('source').source(srcset="" media="")
+                        +e('p').title Видео
+                        +e('p').subtitle Новые технологии производства коробов для скрытых дверей
+                        +e('time').time(datetime="2021-01-25") 25 января 2021 г.
+                    
+            +e.slide        
+                +b('article').paper.--jaluzi
+                    +e('a').link(href="javascript:void(0)" title="Жалюзные межкомнатные двери AIR поражают стилем и притягивают внимание")
+                        +e('picture').picture
+                            +e('source').source(srcset="../images/content/news/news-jaluzi.webp")
+                            +e('img').image(src="../images/content/news/news-jaluzi.jpg" width="258" height="139" alt="Жалюзные межкомнатные двери AIR поражают стилем и притягивают внимание")
+                        +e('p').title Новости и СМИ о нас
+                        +e('p').subtitle Жалюзные межкомнатные двери AIR поражают стилем и&nbsp;притягивают внимание
+                        +e('time').time(datetime="2021-01-25") 25 января 2021 г.

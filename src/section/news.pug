@@ -1,0 +1,23 @@
+include ui-kit/title.pug
+include ribbon-news.pug
+include ribbon-nav.pug
+
+mixin news()
+    +b('section').news
+        .container.container--news
+            +e.shell 
+                +title({
+                        type: "h2",
+                        title: "Новости и советы",
+                    }).--news
+                +e.nav
+                    +e('button').button.--left.--active(data-index="0") Новости
+                    +e('button').button.--right(data-index="1") Советы
+                
+            +ribbon-news()
+                
+            +ribbon-nav({
+                    href: 'javascript:void(0);',
+                    title: 'Все новости',
+                    content: 'Все новости'
+                }).--news

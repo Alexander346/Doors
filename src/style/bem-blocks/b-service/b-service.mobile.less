@@ -1,0 +1,135 @@
+/* 320++  */
+.b-service {
+    background-color: @cl-white;
+    margin: 0 -10px;
+    margin-bottom: 90px;
+
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column; 
+    }
+
+
+    &__facility {
+        margin-bottom: 58px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    &__benefits {
+        height: 365px;
+        position: relative;
+        display: flex;
+        padding-top: 63px;
+        margin-bottom: 12px;
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 211px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.0001) 0%, @cl-white 100%);
+        }
+    }
+
+
+    &__backg {
+        position: relative;
+        display: flex;
+        width: 156px;
+    }
+    &__number {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 72px;
+        font-family: @font-base-lora;
+        font-weight: 700;
+        font-size: 150px;
+        line-height: 192px;
+        width: 70px;
+        color: @cl-white;
+        z-index: 1;
+        margin-left: 30px;
+    }
+
+
+    &__loyalty {
+        z-index: 2;
+        display: flex;
+        margin-left: 31px;
+        margin-bottom: 23px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+
+    &__text {
+        font-family: @font-base;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+        color: @cl-very-dark-gray;
+        margin-top: 0;
+        margin-right: 17px;
+        margin-bottom: 30px;
+        text-align: right;
+    }
+
+    &__consultation{
+        text-align: left;
+        font-family: @font-base;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        margin: 0;
+        margin-left: 16px;
+        margin-bottom: 64px;
+        line-height: 25px;
+        color: @cl-very-dark-gray;
+     }
+
+    &__installation {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__booking{
+        position: relative;
+        height: 100%;
+        width: 100%;
+       ::before{
+        content: "";
+        position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 120px;
+            background:linear-gradient(180deg, rgba(255, 255, 255, 0.0001) 0%, #FFFFFF 220%); 
+    }
+    }  
+
+    &__instruction{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+

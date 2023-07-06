@@ -1,0 +1,25 @@
+mixin interactive()
+    +b('section').interactive
+        .container
+            +e.content
+                +e.shell
+                
+                    include ui-kit/title.pug
+                    +title({
+                        type: 'h2',
+                        title: 'Подберем <br> интерьерное <br> решение?'
+                    }).--interactive
+                    
+                    include subtitle.pug
+                    +subtitle({
+                        subtitle: 'Ответьте на&nbsp;мои 10&nbsp;вопросов,<br> и&nbsp;я&nbsp;покажу вам вариант вашей мечты'
+                    }).--interactive
+                    
+                    include ui-kit/button.pug
+                    +button({
+                        content: 'Подобрать'
+                    }).--interactive
+            
+                +e('picture').picture
+                    +e('source').source(srcset="images/content/interactive/interactive-background-desktop.webp" alt="интерьерное решение")
+                    +e('img').image(src="images/content/interactive/interactive-background-desktop.jpg" alt="интерьерное решение" width="358" height="485")

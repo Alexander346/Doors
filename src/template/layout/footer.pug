@@ -1,0 +1,242 @@
+//- ====================
+//- kontora: footer_main
+//- 00-00-2017: Author
+//- --------------------
+//- Футер страниц
+//- ===================
+include ../../section/ui-kit/icon.pug
+include ../../section/ui-kit/link.pug
+include ../../section/ui-kit/title.pug
+include ../../section/all-service.pug
+include ../../section/subtitle.pug
+
+
+mixin footer()
+    +b('footer').footer
+        +e.top
+            +service([
+                {
+                    title: 'Продукция',
+                    service: [
+                        {
+                            title: 'Межкомнатные двери',
+                            content: 'Межкомнатные двери'
+                        },
+                        {
+                            title: 'Входные двери',
+                            content: 'Входные двери'
+                        },
+                        {
+                            title: 'Скрытые двери',
+                            content: 'Скрытые двери'
+                        },
+                        {
+                            title: 'Межкомнатные перегородки',
+                            content: 'Межкомнатные перегородки'
+                        },
+                        {
+                            title: 'Декоративные рейки',
+                            content: 'Декоративные рейки'
+                        },
+                        {
+                            title: 'Стеновые панели',
+                            content: 'Стеновые панели'
+                        },
+                        {
+                            title: 'Раздвижные двери',
+                            content: 'Раздвижные двери'
+                        },
+                        {
+                            title: 'Плинтусы',
+                            content: 'Плинтусы'
+                        },
+                        {
+                            title: 'Напольные покрытия',
+                            content: 'Напольные покрытия'
+                        },
+                        {
+                            title: 'Мебель',
+                            content: 'Мебель'
+                        },
+                    ]
+                },
+                {
+                    title: 'Декор и аксессуары',
+                    service: [
+                        {
+                            title: 'Декоративное оформление',
+                            content: 'Декоративное оформление'
+                        },
+                        {
+                            title: 'Фурнитура',
+                            content: 'Фурнитура'
+                        },
+                    ]
+                },
+                {
+                    title: 'Покупателям',
+                    service:[
+                        {
+                            title: 'Полезно',
+                            content: 'Полезно'
+                        },
+                        {
+                            title: 'Выездной консультант',
+                            content: 'Выездной консультант'
+                        },
+                        {
+                            title: 'Акции и промокоды',
+                            content: 'Акции и промокоды'
+                        },
+                        {
+                            title: 'Оплата и гарантия',
+                            content: 'Оплата и гарантия'
+                        },
+                        {
+                            title: 'Рассрочка и кредит',
+                            content: 'Рассрочка и кредит'
+                        },
+                        {
+                            title: 'Доставка и установка',
+                            content: 'Доставка и установка'
+                        },
+                        {
+                            title: 'Советы и рекомендации',
+                            content: 'Советы и рекомендации'
+                        },
+                        {
+                            title: 'Доставка и установка',
+                            content: 'Дизайн-проекты'
+                        },
+                    ]
+                },
+                {
+                    title: 'Информация',
+                    service: [
+                        {
+                            title: 'Покрытия',
+                            content: 'Покрытия'
+                        },
+                        {
+                            title: 'Стекла',
+                            content: 'Стекла'
+                        },
+                        {
+                            title: 'Патина',
+                            content: 'Патина'
+                        },
+                    ]
+                },
+                {
+                    title: 'Где купить'
+                },
+                {
+                    title: 'Дизайнерам'
+                },
+                {
+                    title: 'Компания',
+                    service: [
+                        {
+                            title: 'О нас',
+                            content: 'О нас'
+                        },
+                        {
+                            title: 'Производство',
+                            content: 'Производство'
+                        },
+                        {
+                            title: 'Новости',
+                            content: 'Новости'
+                        },
+                        {
+                            title: 'Сертификаты',
+                            content: 'Сертификаты'
+                        },
+                        {
+                            title: 'Отзывы',
+                            content: 'Отзывы'
+                        },
+                        {
+                            title: 'Вакансии',
+                            content: 'Вакансии'
+                        },
+                        {
+                            title: 'Дилерам',
+                            content: 'Дилерам'
+                        },
+                    ]
+                },
+            ])  
+            +b.recourse 
+                .container
+                    +e.flex
+                        +e.wrapper
+                            +title({
+                                type: 'h2',
+                                title: 'Остались вопросы? Напишите нам.',
+                            }).--recourse
+                            +link({
+                                content: 'Обратиться',
+                                link: false,
+                            }).--appeal
+                        +link({
+                            content: 'Помощь в подборе',
+                            link: false,
+                        }).--support
+                            +icon('line-arrow-172').--support
+        +e.bottom
+            +b.contact
+                .container
+                    +e.wrapper
+                        +e.social
+                            +link({
+                                link: true,
+                                href: 'javascript:void(0);',
+                                title: 'Instagram',
+                            }).--social
+                                +icon('instagram').--social
+                            +link({
+                                link: true,
+                                href: 'javascript:void(0);',
+                                title: 'WhatsApp',
+                            }).--social
+                                +icon('whatsapp').--social
+                            +link({
+                                link: true,
+                                href: 'javascript:void(0);',
+                                title: 'Youtube',
+                            }).--social
+                                +icon('youtube').--social
+                        +link({
+                                link: true,
+                                href: 'tel:78005513240',
+                                title: '+88005513240',
+                                content: 'Заказать звонок'
+                            }).--call-request
+                        +link({
+                            link: true,
+                            href: 'tel:78005513240',
+                            title: '+88005513240',
+                            content: '8 800 551 32 40'
+                        }).--number
+            +b.copyright
+                .container
+                    +e.wrapper
+                        +e.left
+                            +link({
+                                link: true,
+                                title: 'Estet',
+                                href: 'javascript:void(0);'
+                            }).--logo
+                                +icon('logo').--copyright
+                        +e.right
+                            +subtitle({
+                                subtitle: "&copy;&nbsp;20201 Дверные технологии. Все права защищены.<br>Чувашская республика, Цивильский район, пос. Молодежный, ул. Заводская&nbsp;1Г"
+                            }).--text
+                            +link({
+                                link: true,
+                                title: 'Политика конфиденциальности',
+                                content:"Политика конфиденциальности",
+                                href: 'javascript:void(0);'
+                            }).--privacy
+                            +icon('kontora').--kontora

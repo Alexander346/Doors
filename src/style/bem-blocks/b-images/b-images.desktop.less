@@ -1,0 +1,51 @@
+/* 1366++  */
+
+.b-images {
+
+    &--interior{
+        max-height: 100%;
+    }
+
+    &--name {
+        max-height: 100%;
+    }
+
+    &--company {
+        max-height: 100%;
+        position: absolute;
+        top:0;
+        right: 100%;
+        width: 0;
+        z-index: 3;
+        visibility: hidden;
+        transition: width @animation-time;
+    }
+    
+    &--technology {
+        max-height: 100%;
+    }
+
+    &__image {
+
+        &--block {
+            display: block;
+        }
+
+        &--interior {
+            object-position: center top;
+        }
+
+        &--technology {
+            object-position: center 80%;
+        }
+
+        &--quality {
+            object-position: center 27%;
+        }
+    }
+    
+    &--showing{
+        width:1200px;
+        height: 675px;
+    }
+}

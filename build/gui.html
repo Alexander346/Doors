@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui, user-scalable=no">
+    <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="google" value="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="email=no"><!-- убрать перед запуском проекта -->
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#3c3c3c">
+    <meta name="msapplication-navbutton-color" content="#3c3c3c">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="icon" href="images/favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="images/favicon/ico.svg" type="image/svg+xml"><link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+<link rel="manifest" href="images/favicon/site.webmanifest">
+<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#000000">
+    <link href="fonts/Lora-Regular.woff2" rel="preload" as="font" crossorigin>
+    <link href="fonts/Lora-Bold.woff2" rel="preload" as="font" crossorigin>
+    <link href="fonts/CGTimes-Regular.woff2" rel="preload" as="font" crossorigin>
+    <link href="fonts/LucidaGrande-Bold.woff2" rel="preload" as="font" crossorigin>
+    <link href="fonts/OpenSans-Light.woff2" rel="preload" as="font" crossorigin>
+    <link href="fonts/OpenSans.woff2" rel="preload" as="font" crossorigin>
+    <link href="fonts/OpenSans-Semibold.woff2" rel="preload" as="font" crossorigin>
+    <link href="fonts/OpenSans-Bold.woff2" rel="preload" as="font" crossorigin>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+    <link href="css/tablet.css" rel="stylesheet" media="(min-width: 768px)">
+    <link href="css/desktop-min.css" rel="stylesheet" media="(min-width: 1024px)">
+    <link href="css/desktop.css" rel="stylesheet" media="(min-width: 1280px)">
+    <link href="css/desktop-big.css" rel="stylesheet" media="(min-width:1440px)">
+    <link href="css/desktop-fullhd.css" rel="stylesheet" media="(min-width:1920px)">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <title>gui</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="">
+    <meta property="og:title" content="gui">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script><!--[if lte IE 9]>
+    <script src="js/html5shiv/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="b-page-wrapper">
+      <header class="b-header">
+        <button class="b-language"> <span class="b-language__text b-language__text--russian">Ru</span><span class="b-language__text b-language__text--english">En</span>
+        </button>
+        <nav class="b-nav b-nav--first">
+          <ul class="b-nav__list">
+            <li class="b-nav__item"> 
+              <button class="b-nav__button"> <span class="b-nav__text">Каталог</span><i class="b-icon b-icon--header-arrow icon-list-arrow icon-list-arrow--header-arrow"></i>
+              </button>
+            </li>
+            <li class="b-nav__item"> 
+              <button class="b-nav__button"> <span class="b-nav__text">Покупателям</span><i class="b-icon b-icon--header-arrow icon-list-arrow icon-list-arrow--header-arrow"></i>
+              </button>
+            </li>
+            <li class="b-nav__item"> <a class="b-nav__link" href="javascript:void(0)" title="Дизайнерам"><span class="b-nav__text">Дизайнерам</span></a>
+            </li>
+          </ul>
+        </nav><a class="b-logo b-logo--header" href="javascript:void(0);" title="Estet"><i class="b-icon b-icon--logo icon-logo icon-logo--logo"></i></a>
+        <nav class="b-nav b-nav--second">
+          <ul class="b-nav__list">
+            <li class="b-nav__item"> 
+              <button class="b-nav__button"> <span class="b-nav__text">Компания</span><i class="b-icon b-icon--header-arrow icon-list-arrow icon-list-arrow--header-arrow"></i>
+              </button>
+            </li>
+            <li class="b-nav__item"> <a class="b-nav__link" href="javascript:void(0)" title="Где купить"><span class="b-nav__text">Где купить</span></a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="b-functionality">
+          <li class="b-functionality__item b-functionality__item--loop">
+            <button class="b-functionality__button"><i class="b-icon b-icon--functionality-loop icon-loop icon-loop--functionality-loop"></i>
+            </button>
+          </li>
+          <li class="b-functionality__item b-functionality__item--heart">
+            <button class="b-functionality__button b-functionality__button--heart"><i class="b-icon b-icon--functionality-heart icon-heart icon-heart--functionality-heart"></i><i class="b-icon b-icon--functionality-heart b-icon--full icon-heart-full icon-heart-full--functionality-heart icon-heart-full--full"></i>
+            </button>
+          </li>
+          <li class="b-functionality__item b-functionality__item--basket">
+            <button class="b-functionality__button"><i class="b-icon b-icon--functionality-basket icon-basket icon-basket--functionality-basket"></i>
+            </button>
+          </li>
+        </ul>
+        <button class="b-burger">
+          <div class="b-burger__line">
+          </div>
+        </button>
+      </header>
+      <main class="b-main" role="main">
+        <div class="b-container">
+          <h1>Gui</h1>
+            <div class="b-text-block">
+              <p><a class="link js-open-popup" href="#" data-popup="test">Открыть попАп - 1</a></p>
+              <p><a class="link js-open-popup" href="#" data-popup="test2">Открыть попАп - 2</a></p>
+            </div><hr class="b-hr"/><a class="b-link b-link--test" href="#" title="undefined" data-url="atribute">text</a>
+            <button class="b-link js-class active" data-popup="open-test">text
+            </button><hr class="b-hr b-hr--none"/><a class="b-button b-button--test" href="#" title="text" data-url="atribute">text</a>
+            <button class="b-button js-class active" data-popup="open-test">text
+            </button><hr class="b-hr"/>
+            <div class="b-text-block">
+              <p>Параграф</p>
+            </div><hr class="b-hr"/><i class="b-icon b-icon--test icon-sort icon-sort--test"></i><i class="b-icon icon-sort"></i><hr class="b-hr"/><!- START табы ->
+            <section class="b-tab js-tab" role="tablist">
+              <nav class="b-tab__tab-nav"><a class="b-tab__link js-tab-link" href="javascript:void(0);" title="Информация" data-tab="content1" aria-controls="content1" role="tab">Название первого таба</a><a class="b-tab__link js-tab-link" href="javascript:void(0);" title="Услуги" data-tab="content2" role="tab" aria-controls="content2">Второго</a><a class="b-tab__link js-tab-link" href="javascript:void(0);" title="Документы" data-tab="content3" role="tab" aria-controls="content3">Три<span class="b-tab__number">7</span></a><a class="b-tab__link js-tab-link" href="javascript:void(0);" title="История начислений" data-tab="content4" role="tab" aria-controls="content4">Четвёртый</a><a class="b-tab__link js-tab-link" href="javascript:void(0);" title="История платежей" data-tab="content5" role="tab" aria-controls="content5">Пятый</a>
+              </nav>
+              <div aria-live="polite" role="region">
+                <article class="b-tab__content js-tab-content active" id="content1" role="tabpanel">
+                  <p>Test tab</p>
+                </article>
+                <article class="b-tab__content js-tab-content" id="content2" role="tabpanel">
+                  <p>Test tab 2</p>
+                </article>
+                <article class="b-tab__content js-tab-content" id="content3" role="tabpanel">
+                </article>
+                <article class="b-tab__content js-tab-content" id="content4" role="tabpanel">
+                </article>
+                <article class="b-tab__content js-tab-content" id="content5" role="tabpanel">
+                </article>
+              </div>
+            </section><!- STOP табы -><hr class="b-hr"/>
+            <div class="b-input active"><input class="b-input__input-field active" id="id-test" type="password" placeholder="write inside me" name="name-test" value="value-test" data-input="input-test"/>
+            </div>
+            <div class="b-input b-input--test"><input class="b-input__input-field b-input__input-field--test" id="id-test2" type="text" placeholder="" name="name-test" value="value-test"/>
+            </div><hr class="b-hr"/><!-- START хлебные крошки -->
+            <nav class="b-breadcrumbs" aria-label="Breadcrumb">
+              <ul class="b-breadcrumbs__list">
+                <li class="b-breadcrumbs__item"><a class="b-breadcrumbs__link" href="javascript:void(0);" title="Главная,неГлавная,другая" aria-current="page">Главная,неГлавная,другая</a>
+                </li>
+                <li class="b-breadcrumbs__item"><a class="b-breadcrumbs__link" href="javascript:void(0);" title="средняя" aria-current="page">средняя</a>
+                </li>
+                <li class="b-breadcrumbs__item b-breadcrumbs__item--last">
+                  <div class="b-breadcrumbs__link" aria-current="page">последняя
+                  </div>
+                </li>
+              </ul>
+            </nav><!-- STOP хлебные крошки --><hr class="b-hr"/>
+            <div class="b-checkbox"><input class="b-checkbox__input js-class" type="checkbox" name="box-test" id="box-test-1"/>
+              <label class="b-checkbox__name" for="box-test-1"><span class="b-checkbox__text">Значение 1</span>
+              </label>
+            </div>
+            <div class="b-checkbox b-checkbox--class"><input class="b-checkbox__input" type="checkbox" name="box-test" id="box-test-2"/>
+              <label class="b-checkbox__name b-checkbox__name--class" for="box-test-2"><span class="b-checkbox__text">Значение 2</span>
+              </label>
+            </div><hr class="b-hr"/>
+            <div class="b-radio"><input class="b-radio__input" type="radio" name="radio-test" id="id-test-3"/>
+              <label class="b-radio__label" for="id-test-3"><span class="b-radio__text-label">textLabel-1</span>
+              </label>
+            </div>
+            <div class="b-radio"><input class="b-radio__input" type="radio" name="radio-test" id="id-test-4"/>
+              <label class="b-radio__label" for="id-test-4"><span class="b-radio__text-label">textLabel-2</span>
+              </label>
+            </div><hr class="b-hr"/>
+            <h1 class="b-title b-title--mod">Отзывы
+            </h1>
+            <h2 class="b-title">title
+            </h2>
+            <div class="b-images">
+              <picture class="b-images__picture"><source class="b-images__image" srcset="/images/content/test-image.webp" media="" type="image/webp"/><img class="b-images__image" src="/images/content/test-image.jpg" alt="" role="presentation"/>
+              </picture>
+            </div>
+            <div class="b-images"><img class="b-images__image" src="/images/content/test-image.jpg" alt="" role="presentation"/>
+            </div>
+            <div class="b-video js-video"><a class="b-video__link js-video__link" href="https://www.youtube.com/watch?v=TgHcTailbao&amp;t=1s">
+              <picture><source srcset="https://i.ytimg.com/vi_webp/TgHcTailbao/maxresdefault.webp" type="image/webp"/><img class="b-video__media js-video__media" src="https://i.ytimg.com/vi/TgHcTailbao/maxresdefault.jpg" loading="lazy" title="" alt="" role="presentation"/>
+              </picture></a>
+              <button class="b-video__button js-video__button" aria-label="Запустить видео">
+                <svg width="68" height="48" viewBox="0 0 68 48">
+                  <path class="b-video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z">
+                  </path>
+                  <path class="b-video__button-icon" d="M 45,24 27,14 27,34">
+                  </path>
+                </svg>
+              </button>
+            </div>
+            <div class="b-video" tabindex="0">
+              <video class="b-video__ourVideo" loading="lazy" controls="controls" preload="metadata" muted="muted"><source src="images/content/test.mp4" type="video/mp4"/>
+              </video>
+              <div class="b-video__control">
+                  <button class="b-button b-play"><i class="b-icon b-icon--play icon-play-ring icon-play-ring--play"></i>
+                  </button>
+                  <button class="b-button b-pause"> 
+                  </button>
+              </div>
+            </div>
+          <div style="height: 200px;"></div>
+        </div>
+      </main>
+      <!-- - subtitle-->
+      <footer class="b-footer">
+        <div class="b-footer__top">
+          <div class="b-all-service">
+            <div class="container">
+              <ul class="b-all-service__list">
+                <li class="b-all-service__item">
+                  <h3 class="b-title b-title--all-service">Продукция
+                  </h3>
+                  <ul class="b-all-service__roster">
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Межкомнатные двери">Межкомнатные двери</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Входные двери">Входные двери</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Скрытые двери">Скрытые двери</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Межкомнатные перегородки">Межкомнатные перегородки</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Декоративные рейки">Декоративные рейки</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Стеновые панели">Стеновые панели</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Раздвижные двери">Раздвижные двери</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Плинтусы">Плинтусы</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Напольные покрытия">Напольные покрытия</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Мебель">Мебель</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="b-all-service__item">
+                  <h3 class="b-title b-title--all-service">Декор и аксессуары
+                  </h3>
+                  <ul class="b-all-service__roster">
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Декоративное оформление">Декоративное оформление</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Фурнитура">Фурнитура</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="b-all-service__item">
+                  <h3 class="b-title b-title--all-service">Покупателям
+                  </h3>
+                  <ul class="b-all-service__roster">
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Полезно">Полезно</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Выездной консультант">Выездной консультант</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Акции и промокоды">Акции и промокоды</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Оплата и гарантия">Оплата и гарантия</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Рассрочка и кредит">Рассрочка и кредит</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Доставка и установка">Доставка и установка</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Советы и рекомендации">Советы и рекомендации</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Доставка и установка">Дизайн-проекты</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="b-all-service__item">
+                  <h3 class="b-title b-title--all-service">Информация
+                  </h3>
+                  <ul class="b-all-service__roster">
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Покрытия">Покрытия</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Стекла">Стекла</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Патина">Патина</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="b-all-service__item b-all-service__item--margin"><a class="b-link b-link--title-link" href="javascript:void(0);" title="Где купить">Где купить</a>
+                </li>
+                <li class="b-all-service__item b-all-service__item--margin"><a class="b-link b-link--title-link" href="javascript:void(0);" title="Дизайнерам">Дизайнерам</a>
+                </li>
+                <li class="b-all-service__item">
+                  <h3 class="b-title b-title--all-service">Компания
+                  </h3>
+                  <ul class="b-all-service__roster">
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="О нас">О нас</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Производство">Производство</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Новости">Новости</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Сертификаты">Сертификаты</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Отзывы">Отзывы</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Вакансии">Вакансии</a>
+                    </li>
+                    <li class="b-all-service__element"><a class="b-link b-link--all-service" href="javascript:void(0);" title="Дилерам">Дилерам</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="b-recourse"> 
+            <div class="container">
+              <div class="b-recourse__flex">
+                <div class="b-recourse__wrapper">
+                  <h2 class="b-title b-title--recourse">Остались вопросы? Напишите нам.
+                  </h2>
+                  <button class="b-link b-link--appeal">Обратиться
+                  </button>
+                </div>
+                <button class="b-link b-link--support">Помощь в подборе<i class="b-icon b-icon--support icon-line-arrow-172 icon-line-arrow-172--support"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="b-footer__bottom">
+          <div class="b-contact">
+            <div class="container">
+              <div class="b-contact__wrapper">
+                <div class="b-contact__social"><a class="b-link b-link--social" href="javascript:void(0);" title="Instagram"><i class="b-icon b-icon--social icon-instagram icon-instagram--social"></i></a><a class="b-link b-link--social" href="javascript:void(0);" title="WhatsApp"><i class="b-icon b-icon--social icon-whatsapp icon-whatsapp--social"></i></a><a class="b-link b-link--social" href="javascript:void(0);" title="Youtube"><i class="b-icon b-icon--social icon-youtube icon-youtube--social"></i></a>
+                </div><a class="b-link b-link--call-request" href="tel:78005513240" title="+88005513240">Заказать звонок</a><a class="b-link b-link--number" href="tel:78005513240" title="+88005513240">8 800 551 32 40</a>
+              </div>
+            </div>
+          </div>
+          <div class="b-copyright">
+            <div class="container">
+              <div class="b-copyright__wrapper">
+                <div class="b-copyright__left"><a class="b-link b-link--logo" href="javascript:void(0);" title="Estet"><i class="b-icon b-icon--copyright icon-logo icon-logo--copyright"></i></a>
+                </div>
+                <div class="b-copyright__right">
+                  <p class="b-subtitle b-subtitle--text">&copy;&nbsp;20201 Дверные технологии. Все права защищены.<br>Чувашская республика, Цивильский район, пос. Молодежный, ул. Заводская&nbsp;1Г
+                  </p><a class="b-link b-link--privacy" href="javascript:void(0);" title="Политика конфиденциальности">Политика конфиденциальности</a><i class="b-icon b-icon--kontora icon-kontora icon-kontora--kontora"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+        <div class="b-popup" role="dialog" aria-modal="true" data-popup="test">
+          <div class="b-popup__content">
+            <div style="background-color: white; height: 999px; width: 400px;">Тестовый текст<br>
+                  <button class="b-popup__close js-close-popup"><i class="b-icon b-icon--close-popup icon-sort icon-sort--close-popup" aria-hidden="true"></i>
+                    <div class="visually-hidden">Закрыть окно</div>
+                  </button>
+            </div>
+          </div>
+        </div>
+        <div class="b-popup" role="dialog" aria-modal="true" data-popup="test2">
+          <div class="b-popup__content">
+            <div style="background-color: white; height: 229px; width: 150px;">Тестовый текст 2<br>
+                  <button class="b-popup__close js-close-popup"><i class="b-icon b-icon--close-popup icon-sort icon-sort--close-popup" aria-hidden="true"></i>
+                    <div class="visually-hidden">Закрыть окно</div>
+                  </button>
+            </div>
+          </div>
+        </div>
+    <script src="js/external.js"></script>
+    <script src="js/internal.js"></script>
+  </body>
+</html>

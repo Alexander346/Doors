@@ -1,0 +1,49 @@
+/* 1366++  */
+
+.b-technology {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    height: 100%;
+    width: 75%;
+    z-index: 2;
+    cursor: pointer;
+    transition: height @animation-time;
+
+    & .b-pulse {
+
+        &::after,
+        &::before {
+            animation-delay: 4s;
+        }
+    }
+    
+    &:hover {
+        height: 235.22%;
+        
+        .b-technology__bottom {
+            bottom: 0;
+        }
+
+        .b-pulse {
+            opacity: 0;
+        }
+    }
+    
+    &__top {
+        height: 100%;
+        width: 100%;
+        transition: height @animation-time;
+    }
+
+    &__bottom {
+        position: absolute;
+        height: 42.465%;
+        width: 100%;
+        bottom: -100%;
+        left:0;
+        padding: 2vw 3vw;
+        background: @cl-dark-cyan---lime-green;
+        transition: bottom @animation-time;
+    }
+}

@@ -1,0 +1,30 @@
+/* 320++  */
+.b-location {
+    display: flex;
+    margin-bottom: 37px;
+    padding-top: 2px;
+    height: 30px;
+    overflow: hidden; 
+    cursor: pointer;
+    
+    &:hover {  
+        overflow: visible;
+    }
+    
+    &__list {
+        padding: 0;
+        z-index: 10;
+    }
+    
+    &__list li {
+        list-style-type: none;
+        padding: 0 13px 0 17px;
+    }
+    
+    &__city {
+        color: @cl-dark-cyan---lime-green;
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+

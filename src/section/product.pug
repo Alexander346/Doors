@@ -1,0 +1,206 @@
+mixin product()
+    +b('section').product
+        +b.doors 
+            .container
+                +e.wrap
+                    +e.universal--interior
+                        +e('a').reference(href='javascript:void(0);' title='')
+                            +images([
+                                    {
+                                        srcset: 'images/content/product/webp/interior-doors-tablet.webp',
+                                        media: '(min-width: 1280px)',
+                                        type: 'image/jpeg'
+                                    },
+                                    {
+                                        srcset: 'images/content/product/webp/interior-doors-tablet.webp',
+                                        media: '(min-width: 768px)',
+                                        type: 'image/jpeg'
+                                    },
+                                    {
+                                        srcset: 'images/content/product/mob/webp/interior-doors.webp',
+                                        media: '(min-width: 320px)',
+                                        type: 'image/jpeg'
+                                    },
+                                ], true, 'images/content/product/Interior_doors_tablet.jpg', 601, 362).--room.--release
+                        +e('a').interior Межкомнатные двери
+                        include ui-kit/button.pug
+                        +button({}).--button1.--action
+                            include ui-kit/icon.pug
+                            +icon('ring-arrow')
+                    +e.universal--hidden
+                        +e('a').reference(href='javascript:void(0);' title='')
+                            +images([
+                                    {
+                                        srcset: 'images/content/product/webp/hidden-doors-tablet.webp',
+                                        media: '(min-width: 1280px)',
+                                        type: 'image/jpeg'
+                                    },
+                                    {
+                                        srcset: 'images/content/product/webp/hidden-doors-tablet.webp',
+                                        media: '(min-width: 768px)',
+                                        type: 'image/jpeg'
+                                    },
+                                    {
+                                        srcset: 'images/content/product/mob/webp/hidden_doors.webp',
+                                        media: '(min-width: 320px)',
+                                        type: 'image/jpeg'
+                                    },
+                                ], true, 'images/content/product/hidden_doors_tablet.jpg', 301, 362).--release
+                        +e('a').hidden Скрытые двери
+                        include ui-kit/button.pug
+                        +button({}).--button2.--action
+                            include ui-kit/icon.pug
+                            +icon('ring-arrow')
+                    +e.universal--decorative
+                        +e('a').reference(href='javascript:void(0);' title='')
+                            +images([
+                                    {
+                                        srcset: 'images/content/product/webp/decorative-reiki-tablet.webp',
+                                        media: '(min-width: 1280px)',
+                                        type: 'image/jpeg'
+                                    },
+                                    {
+                                        srcset: 'images/content/product/webp/decorative-reiki-tablet.webp',
+                                        media: '(min-width: 768px)',
+                                        type: 'image/jpeg'
+                                    },
+                                    {
+                                        srcset: 'images/content/product/mob/webp/Decorative_reiki.webp',
+                                        media: '(min-width: 320px)',
+                                        type: 'image/jpeg'
+                                    },
+                                ], true, 'images/content/product/Decorative_reiki_tablet.jpg', 299, 362).--wooden.--release
+                        include ui-kit/button.pug
+                        +button({}).--button3.--action
+                            include ui-kit/icon.pug
+                            +icon('ring-arrow')
+                        +e('a').decorative Декоративные рейки
+                    +e('p').model
+                        | В&nbsp;компании ESTET вы&nbsp;можете купить качественные межкомнатные двери.
+                        | Богатый выбор является гарантией того, что вы&nbsp;обязательно найдете
+                        | модель, оптимально соответствующую вашим потребностям, пожеланиям и&nbsp;
+                        | финансовым возможностям.
+                    +e.universal--sliding
+                        +e('a').reference(href='javascript:void(0);' title='')
+                            +images([
+                                    {
+                                        srcset: 'images/content/product/webp/Sliding_doors_tablet.webp',
+                                        media: '(min-width: 1280px)',
+                                        type: 'image/jpeg'
+                                    },
+                                    {
+                                        srcset: 'images/content/product/webp/Sliding_doors_tablet.webp',
+                                        media: '(min-width: 768px)',
+                                        type: 'image/jpeg'
+                                    },
+                                    {
+                                        srcset: 'images/content/product/mob/webp/sliding-doors.webp',
+                                        media: '(min-width: 320px)',
+                                        type: 'image/jpeg'
+                                    },
+                                ], true, 'images/content/product/Sliding_doors_tablet.jpg', 216, 452).--unblock.--release
+                        +e('a').sliding Раздвижные двери
+                            include ui-kit/button.pug
+                            +button({}).--button4.--action
+                                include ui-kit/icon.pug
+                                +icon('ring-arrow')
+                    +e.universal--entrance
+                        +e('a').reference(href='javascript:void(0);' title='')
+                            +images([
+                                    {
+                                        srcset: 'images/content/product/webp/entrance-doors-tablet.webp',
+                                        media: '(min-width: 1280px)',
+                                        type: 'image/jpeg'
+                                    },
+                                    {
+                                        srcset: 'images/content/product/webp/entrance-doors-tablet.webp',
+                                        media: '(min-width: 768px)',
+                                        type: 'image/jpeg'
+                                    },
+                                    {
+                                        srcset: 'images/content/product/mob/webp/entrance-doors.webp',
+                                        media: '(min-width: 320px)',
+                                        type: 'image/jpeg'
+                                    },
+                                ], true, 'images/content/product/Entrance_doors_tablet.jpg', 300, 224).--release
+                        +e('a').entrance Входные двери
+                        include ui-kit/button.pug
+                        +button({}).--button5.--action
+                            include ui-kit/icon.pug
+                            +icon('ring-arrow')
+                    +e('p').conditions
+                        | Мы&nbsp;украшаем жизнь покупателей своей качественной продукцией, даря
+                        | тепло и&nbsp;уют в&nbsp;их&nbsp;дома, создаем все условия для самореализации
+                        | сотрудников и&nbsp;успеха партнеров.    
+                    +e.universal--partitions
+                        +e('a').reference(href='javascript:void(0);' title='')
+                            +images([
+                                    {
+                                        srcset: 'images/content/product/webp/interior-partitions-tablet.webp',
+                                        media: '(min-width: 1280px)',
+                                        type: 'image/jpeg'
+                                    },
+                                    {
+                                        srcset: 'images/content/product/webp/interior-partitions-tablet.webp',
+                                        media: '(min-width: 768px)',
+                                        type: 'image/jpeg'
+                                    },
+                                    {
+                                        srcset: 'images/content/product/mob/webp/interior-partitions.webp',
+                                        media: '(min-width: 320px)',
+                                        type: 'image/jpeg'
+                                    },
+                                ], true, 'images/content/product/Interior_partitions_tablet.jpg', 599, 311).--septum.--release
+                        include ui-kit/button.pug
+                        +button({}).--button6.--action
+                            include ui-kit/icon.pug
+                            +icon('ring-arrow')
+                        +e('a').partitions Межкомнатные перегородки
+                    +e.universal--panels
+                        +e('a').reference(href='javascript:void(0);' title='')
+                            +images([
+                                    {
+                                        srcset: 'images/content/product/webp/wall-panels-tablet.webp',
+                                        media: '(min-width: 1280px)',
+                                        type: 'image/jpeg'
+                                    },
+                                    {
+                                        srcset: 'images/content/product/webp/wall-panels-tablet.webp',
+                                        media: '(min-width: 768px)',
+                                        type: 'image/jpeg'
+                                    },
+                                    {
+                                        srcset: 'images/content/product/mob/webp/Wall_panels.webp',
+                                        media: '(min-width: 320px)',
+                                        type: 'image/jpeg'
+                                    },
+                                ], true, 'images/content/product/Wall_panels_tablet.jpg', 301, 225).--release
+                        include ui-kit/button.pug
+                        +button({}).--button7.--action
+                            include ui-kit/icon.pug
+                            +icon('ring-arrow')
+                        +e('a').panels Стеновые панели
+                    +e.universal--skirting
+                        +e('a').reference(href='javascript:void(0);' title='')
+                            +images([
+                                    {
+                                        srcset: 'images/content/product/webp/skirting-boards-tablet.webp',
+                                        media: '(min-width: 1280px)',
+                                        type: 'image/jpeg'
+                                    },
+                                    {
+                                        srcset: 'images/content/product/webp/skirting-boards-tablet.webp',
+                                        media: '(min-width: 768px)',
+                                        type: 'image/jpeg'
+                                    },
+                                    {
+                                        srcset: 'images/content/product/mob/webp/skirting-boards.webp',
+                                        media: '(min-width: 320px)',
+                                        type: 'image/jpeg'
+                                    },
+                                ], true, 'images/content/product/skirting_boards_tablet.jpg', 300, 225).--release
+                        include ui-kit/button.pug
+                        +button({}).--button8.--action
+                            include ui-kit/icon.pug
+                            +icon('ring-arrow')
+                        +e('a').skirting Плинтусы

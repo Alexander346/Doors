@@ -1,0 +1,100 @@
+/* 320++  */
+
+.b-preview {
+    background: @cl-very-dark-gray;
+
+    &__content {
+        position: relative;
+        min-height: 400px;
+        height: 100vh;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0 15px;
+        padding-bottom: 25px;
+        min-height: 400px;
+        height: 100vh;
+    }
+
+    &__wrapper {
+        margin-bottom: 120px;
+
+        @media (max-height: 450px) {
+            margin-bottom: 60px;
+        }
+    }
+
+    & .swiper-wrapper {
+        position: static;
+        transform: none;
+    }
+
+    &__slide {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-top: 14vh;
+
+        @media (max-height: 760px) {
+            padding-top: 0;
+        }
+    }
+
+    & .swiper-slide {
+        display: flex;
+        position: static;
+    }
+
+    &__button {
+        display: flex;
+        position: relative;
+        z-index: 1;
+        width: calc(~'100% - 60px');
+        flex: 0 0 43px;
+    }
+
+    &__button .b-swiper-button-prev,
+    &__button .b-swiper-button-next {
+        width: 43px;
+        height: 43px;
+        position: absolute;
+        top: 0;
+        left: calc(~'43px * 2');
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 0;
+        transition: left @animation-time;
+
+        &::after {
+            content: '';
+            font-size: 0;
+        }
+    } 
+
+    &__button .b-swiper-button-prev{
+        transform: rotate(-180deg) translateY(2px);
+        left: 0;
+        
+        .touchevents &:active,
+        .no-touchevents &:hover {
+            left: -3px;
+        }
+    }
+
+    &__button .b-swiper-button-next {
+        .touchevents &:active,
+        .no-touchevents &:hover {
+            left: calc(~'43px * 2 + 3px');
+        }
+    }
+
+}
+
+
+

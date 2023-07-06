@@ -1,0 +1,27 @@
+include ui-kit/images.pug
+mixin sale() 
+      +b('section').sale
+
+            .container
+                  .wrapper--relative 
+                        include slider.pug 
+                        +slider-sale()
+
+                        .wrapper--margin
+                              include ui-kit/title.pug
+                              +title({
+                              type: 'h3',
+                              title: '<span class="accent">—20%</span> <span class="no-accent">на коллекции<br> MIO, ENGLAND, FIGURE</span> ',
+                              }).--sale
+                              include ui-kit/title.pug
+                              +title({
+                              type: 'h3',
+                              title: 'Распродажа классических коллекций',
+                              }).--sale-collection
+                              include subtitle.pug
+                              +subtitle({
+                                    subtitle: 'Успейте купить межкомнатные двери классической коллекции со скидкой 20% до середины февраля.'
+                              }).--sale
+                              +subtitle({
+                                    subtitle: 'Акция действует до 15 февраля 2021г'
+                              }).--sale-date

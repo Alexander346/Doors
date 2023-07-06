@@ -1,0 +1,29 @@
+/* 1366++  */
+
+.b-copyright {
+    position: relative;
+    padding-right: 0;
+    width: 90%;
+    padding: 123px 0 40px 0;
+    padding-left: 15px;
+
+    .container {
+        padding-right: 0;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top:0;
+        right: 99%;
+        width: 300%;
+        height: 100%;
+        background: @cl-very-dark-gray-mostly-black;
+        z-index: -1;
+    }
+
+    &__wrapper  {
+        position: relative;
+    }
+
+}

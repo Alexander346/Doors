@@ -1,0 +1,151 @@
+/* 320 + */
+.b-link {
+    display: inline;
+    text-decoration: none;
+    transition: color @animation-time;
+    appearance:         none;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+
+    // Общие
+    &--block {
+        display: block;
+    }
+
+    &--appeal {
+        width: 100%;
+        max-width: 325px;
+        height: 60px;
+        border: solid 1px @cl-white;
+        background: @cl-transparent;
+        font-size: 18px;
+        line-height: 21px;
+        color: @cl-white;
+        display: block;
+        line-height: 0;
+        padding: 0;
+        margin: 0px auto;
+        margin-bottom: 37px;
+
+        transition: all @animation-time;
+
+        .touchevents &:active,
+        .no-touchevents &:hover {
+            background: @cl-white;
+            color: @cl-very-dark-gray;
+
+        }
+    }
+
+    &--support {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 106px;
+        width: 100%;
+        outline: none;
+        border-width: 0;
+        background-color: @cl-transparent;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21px;
+        padding: 0;
+        color: @cl-white;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top:0;
+            left: -25px;
+            width: 116%;
+            height: 1px;
+            background: @cl-white;
+        }
+
+        .touchevents &:active,
+        .no-touchevents &:hover {
+            
+            .b-icon--support {
+                left: 0;
+            }
+        }
+    }
+
+    &--call-request {
+        font-size: 16px;
+        line-height: 26px;
+        color: @cl-white;;
+        display: inline-block;
+        border-bottom: 1px solid;
+        margin: 0 0 25px;
+        transition: opacity @animation-time;
+        align-self: flex-start;
+
+        .touchevents &:active,
+        .no-touchevents &:hover {
+            opacity: .5;
+
+        }
+    }
+
+    &--social {
+        display: inline-block;
+        height: 24px;
+        margin: 0 12px;
+
+        .touchevents &:active,
+        .no-touchevents &:hover {
+            
+            .b-icon--social {
+                color: @cl-white;
+            }
+        }
+    }
+
+    &--logo {
+        display: block;
+        position: relative;
+        width: 57px;
+        height: 57px;
+    }
+
+    &--privacy {
+        font-size: 12px;
+        line-height: 14px;
+        color: @cl-dark-gray-dark;
+        align-self: flex-start;
+        position: relative;
+        margin-bottom: 37px;
+        transition: color @animation-time;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: @cl-dark-gray-dark;
+            transition: background @animation-time;
+        }
+        
+        .touchevents &:active,
+        .no-touchevents &:hover {
+            color: @cl-white;
+
+            &::after {
+                background: @cl-white;
+            }
+        }
+
+    }
+
+    &--number{
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: 700;
+        color: @cl-white;
+        align-self: flex-start;
+    }
+}

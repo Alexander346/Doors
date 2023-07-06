@@ -1,0 +1,60 @@
+include subtitle.pug
+include ui-kit/title.pug
+include ui-kit/button.pug
+include ui-kit/icon.pug
+include ui-kit/images.pug
+include ui-kit/video.pug
+include logo.pug
+
+mixin review()
+    +b('section').review
+        .container
+            +e.body
+                +title({
+                    type: 'h2',
+                    title: 'Видео обзор'
+                }).--review
+                +video({
+                    address: 'images/content/review/review.mp4', 
+                }).--review(id='review' poster="images/content/review/moon.jpg")       
+                +e.content
+                    +e.desktop-relative
+                        +e('ul').list
+                            +e.item
+                                +e('a').link(href='javascript:void(0);' title='Современный ремонт квартиры-студии!')
+                                    +icon('play-ring').--review
+                                    +subtitle({
+                                        subtitle: 'Современный ремонт квартиры-студии!'
+                                    }).--review
+                            +e.item.--active
+                                +e('a').link(href='javascript:void(0);' title='ESTET воплощает мечты')
+                                    +icon('play-ring').--review
+                                    +subtitle({
+                                        subtitle: 'ESTET воплощает мечты'
+                                    }).--review
+                            +e.item
+                                +e('a').link(href='javascript:void(0);' title='Двери ESTET. Жизнь фабрики.')
+                                    +icon('play-ring').--review
+                                    +subtitle({
+                                        subtitle: 'Двери ESTET. Жизнь фабрики.'
+                                    }).--review
+                            +e.item
+                                +e('a').link(href='javascript:void(0);' title='Современный ремонт квартиры-студии')
+                                    +icon('play-ring').--review
+                                    +subtitle({
+                                        subtitle: 'Современный ремонт квартиры-студии!'
+                                    }).--review
+                        +e.navigation
+                            +button({}).--review-top
+                                +icon('line-arrow-26').--about
+                            +button({}).--review-bottom
+                                +icon('line-arrow-26').--about
+                +e.youtube
+                    +icon('youtube').--youtube
+                    +subtitle({
+                        subtitle: 'Еще больше новых обзоров вы&nbsp;найдете на&nbsp;нашем <a href="javascript:void(0);" title="Youtube" target="">Youtube</a> канале'
+                    }).--youtube
+                            
+
+
+                    

@@ -1,0 +1,157 @@
+// - about
+
+include subtitle.pug
+include ui-kit/title.pug
+include ui-kit/button.pug
+include ui-kit/icon.pug
+include ui-kit/images.pug
+include logo.pug
+
+
+mixin about()
+    +b('section').about
+        +e.content
+            .container    
+                +e.body
+                    +title({
+                        type:'h2',
+                        title: 'Estet',
+                    }).--about
+                    +subtitle({
+                        subtitle: 'Дверные технологии ESTET превращают квадратные метры в&nbsp;уютный Дом, пространство в&nbsp;удобное и&nbsp;прекрасное Жильё. Наши двери создают неповторимые ощущения, когда каждый день&nbsp;Вы открываете дверь и&nbsp;вместе с&nbsp;тем что-то новое, а&nbsp;главное&nbsp;&mdash; открываете с&nbsp;удовольствием!',
+                    }).--about
+                +e.navigation
+                    +button({}).--about
+                        +icon('line-arrow-26').--about.--green
+                    +button({})
+                        +icon('line-arrow-26').--about
+            +b.info
+                +e.mobile-table
+                    +e.interior
+                        +e.left
+                            +images([{
+                                    srcset: 'images/content/about/interior.webp',
+                                    type: 'image/webp'
+                                }], true, 'images/content/about/interior.jpg', 643, 653).--interior
+                        +e.right
+                            +title({
+                                type:'h3',
+                                title: 'Современные интерьерные решения',
+                            }).--info.--none
+                            +subtitle({
+                                subtitle: 'Межкомнатные и&nbsp;офисные двери с&nbsp;богатой цветовой гаммой, стильным дизайном, различными вариантами исполнения и&nbsp;нестандартными размерами',
+                            }).--info.--none
+                    +e.name
+                        +e.left
+                            +images([{
+                                    srcset: 'images/content/about/estet.webp',
+                                    type: 'image/webp'
+                                }], true, 'images/content/about/estet.jpg', 322, 327).--name
+                        +e.right
+                            +title({
+                                type:'h3',
+                                title: 'Estet',
+                            }).--info.--uppercase
+                            +subtitle({
+                                subtitle: 'Дверные технологии ESTET превращают квадратные метры в&nbsp;уютный Дом, пространство в&nbsp;удобное и&nbsp;прекрасное Жильё. Наши двери создают неповторимые ощущения, когда каждый день&nbsp;Вы открываете дверь и&nbsp;вместе с&nbsp;тем что-то новое, а&nbsp;главное&nbsp;&mdash; открываете с&nbsp;удовольствием!',
+                            }).--info
+                    +e.company
+                        +e.left
+                            +title({
+                                type:'h3',
+                                title: 'Компания',
+                            }).--info
+                            +subtitle({
+                                subtitle: 'Мы&nbsp;работаем на&nbsp;рынке производства дверей с&nbsp;2002&nbsp;года. За&nbsp;это время мы&nbsp;зарекомендовали себя как надежный партнер и&nbsp;динамично развивающаяся компания.',
+                            }).--info
+                        +e.right
+                            +images([{
+                                    srcset: 'images/content/about/quality.webp',
+                                    type: 'image/webp'
+                                }], true, 'images/content/about/quality.jpg', 651, 929).--quality
+                    +e.technology
+                        +e.left
+                            +images([{
+                                    srcset: 'images/content/about/technology.webp',
+                                    type: 'image/webp'
+                                }], true, 'images/content/about/technology.jpg', 717, 573).--technology
+                        +e.right
+                            +logo().--about
+                +e.desktop
+                    +e.left
+                        +e.top
+                            +b.interior
+                                +e.left
+                                    +images([{
+                                        srcset: 'images/content/about/interior.webp',
+                                        type: 'image/webp'
+                                    }], true, 'images/content/about/interior.jpg', 643, 653).--interior
+                                +e.right
+                                    +title({
+                                        type:'h3',
+                                        title: 'Современные интерьерные решения',
+                                    }).--white
+                                    +subtitle({
+                                        subtitle: 'Межкомнатные и&nbsp;офисные двери с&nbsp;богатой цветовой гаммой, стильным дизайном, различными вариантами исполнения и&nbsp;нестандартными размерами',
+                                    }).--info.--white
+                                +b.pulse.--interior
+                            +b.company
+                                +e.top
+                                    +images([{
+                                            srcset: 'images/content/about/estet.webp',
+                                            type: 'image/webp'
+                                        }], true, 'images/content/about/estet.jpg', 322, 327).--block
+                                +e.bottom
+                                    +title({
+                                        type:'h3',
+                                        title: 'Компания',
+                                    }).--info
+                                    +subtitle({
+                                        subtitle: 'Мы&nbsp;работаем на&nbsp;рынке производства дверей с&nbsp;2002&nbsp;года. За&nbsp;это время мы&nbsp;зарекомендовали себя как надежный партнер и&nbsp;динамично развивающаяся компания.',
+                                    }).--info
+                                    +images([{
+                                            srcset: 'images/content/about/company.webp',
+                                            type: 'image/webp'
+                                        }], true, 'images/content/about/company.jpg', 642, 326).--block.--company
+                                    +b.pulse.--green
+                        +e.bottom
+                            +logo().--about
+                            +b.technology
+                                +e.top
+                                    +images([{
+                                            srcset: 'images/content/about/technology.webp',
+                                            type: 'image/webp'
+                                        }], true, 'images/content/about/technology.jpg', 717, 573).--block.--technology
+                                +e.bottom
+                                    +title({
+                                        type:'h3',
+                                        title: 'Новые технологии',
+                                    }).--white
+                                    +subtitle({
+                                        subtitle: 'Каркас двери и&nbsp;дверная коробка изготавливаются из&nbsp;хвойного бруса высокого качества, срощенного по&nbsp;длине и&nbsp;оптимизированного, то&nbsp;есть из&nbsp;него вырезаны сучки, смоляные карманы и&nbsp;другие пороки, присущие натуральному дереву.',
+                                    }).--info.--white
+                                +b.pulse.--technology
+                    +e.right
+                        +b.name
+                            +title({
+                                type:'h3',
+                                title: 'Estet',
+                            }).--info.--uppercase
+                            +subtitle({
+                                subtitle: 'Дверные технологии ESTET превращают квадратные метры в&nbsp;уютный Дом, пространство в&nbsp;удобное и&nbsp;прекрасное Жильё. Наши двери создают неповторимые ощущения, когда каждый день&nbsp;Вы открываете дверь и&nbsp;вместе с&nbsp;тем что-то новое, а&nbsp;главное&nbsp;&mdash; открываете с&nbsp;удовольствием!',
+                            }).--info
+                        +b.quality
+                            +e.top
+                                +images([{
+                                        srcset: 'images/content/about/quality.webp',
+                                        type: 'image/webp'
+                                    }], true, 'images/content/about/quality.jpg', 651, 929).--block.--quality
+                            +e.bottom
+                                +title({
+                                    type:'h3',
+                                    title: 'Высокое качество',
+                                }).--white
+                                +subtitle({
+                                    subtitle: 'Все наши двери проходят строжайший контроль качества на&nbsp;всех этапах производства. Следить за&nbsp;качеством, мы&nbsp;считаем, важнейшая задача производителя.',
+                                }).--info.--white
+                            +b.pulse.--quality

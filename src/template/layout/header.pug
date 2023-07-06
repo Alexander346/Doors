@@ -1,0 +1,49 @@
+//- ====================
+//- kontora: Шапка сайта
+//- 00-00-2017: Author
+//- --------------------
+//- Шапка
+//- ====================
+
+include ../../section/language.pug
+include ../../section/burger.pug
+include ../../section/logo.pug
+include ../../section/functionality.pug
+
+include ../../section/ui-kit/icon.pug
+
+mixin header()
+    +b('header').header
+        
+        +language()
+        
+        +b('nav').nav.--first
+            +e('ul').list
+                +e('li').item 
+                    +e('button').button 
+                        +e('span').text Каталог
+                        +icon('list-arrow').--header-arrow
+                +e('li').item 
+                    +e('button').button 
+                        +e('span').text Покупателям
+                        +icon('list-arrow').--header-arrow
+                +e('li').item 
+                    +e('a').link(href="javascript:void(0)" title="Дизайнерам")
+                        +e('span').text Дизайнерам
+        
+        +logo().--header
+        
+        +b('nav').nav.--second
+            +e('ul').list
+                +e('li').item 
+                    +e('button').button 
+                        +e('span').text Компания
+                        +icon('list-arrow').--header-arrow
+                +e('li').item 
+                    +e('a').link(href="javascript:void(0)" title="Где купить")
+                        +e('span').text Где купить
+                             
+        +functionality()
+                
+        +burger()
+        

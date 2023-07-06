@@ -1,0 +1,1 @@
+"use strict";function generateBreadcrumbs(r,t){for(var e,n=[1,2,3,r-1,r,r+1,t-2,t-1,t].filter(function(r,e,n){return 0<r&&r<=t&&n.indexOf(r)===e}).sort(function(r,e){return r-e}),u=-1;n[1+u++];)1<(e=n[u+1]-n[u])&&(e=2==e?n[u]+1:"...",n.splice(++u,0,e));return n}
